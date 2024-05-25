@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="i.jpg" />
+    <None Remove="pngwing.com %281%29.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="i.jpg" />
+    <Resource Include="pngwing.com (1).png" />
+  </ItemGroup>
+
+</Project>
