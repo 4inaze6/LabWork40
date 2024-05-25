@@ -17,7 +17,14 @@
                 <RotateTransform Angle="25"/>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Ellipse Stroke="Black"  StrokeThickness="5" StrokeDashArray="5 1" Fill="Gray" Height="100" Width="100" Canvas.Left="491" Canvas.Top="223"/>
+        <Ellipse Stroke="Black"  StrokeThickness="5" StrokeDashArray="5 1" Height="100" Width="100" Canvas.Left="491" Canvas.Top="223">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1.1"/>
+                    <GradientStop Color="Gray" Offset="0.5"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
         <Ellipse Fill="Silver" Height="70" Width="70" Canvas.Left="506" Canvas.Top="238" RenderTransformOrigin="1.122,1.115"/>
         <Ellipse Fill="White" Height="12" Width="12" Canvas.Left="535" Canvas.Top="293" RenderTransformOrigin="2.434,2.234" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Ellipse Fill="White" Height="12" Width="12" Canvas.Left="552" Canvas.Top="250" RenderTransformOrigin="2.434,2.234" HorizontalAlignment="Left" VerticalAlignment="Top"/>
@@ -28,7 +35,15 @@
         <Ellipse Fill="White" Height="12" Width="12" Canvas.Left="518" Canvas.Top="250" RenderTransformOrigin="2.434,2.234" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Ellipse Fill="White" Height="12" Width="12" Canvas.Left="509" Canvas.Top="267" RenderTransformOrigin="2.434,2.234" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
-        <Ellipse Stroke="Black" StrokeThickness="5" StrokeDashArray="5 1" StrokeDashCap="Flat"  Fill="Gray" Height="100" Width="100" Canvas.Left="235" Canvas.Top="223" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Ellipse Stroke="Black" StrokeThickness="5" StrokeDashArray="5 1" StrokeDashCap="Flat" Height="100" Width="100" Canvas.Left="235" Canvas.Top="223" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1.1"/>
+                    <GradientStop Color="Gray" Offset="0.5"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+
+        </Ellipse>
         <Ellipse Fill="Silver" Height="70" Width="70" Canvas.Left="250" Canvas.Top="238" RenderTransformOrigin="1.122,1.115" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Ellipse Fill="White" Height="12" Width="12" Canvas.Left="305" Canvas.Top="267" RenderTransformOrigin="2.434,2.234" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Ellipse Fill="White" Height="12" Width="12" Canvas.Left="279" Canvas.Top="293" RenderTransformOrigin="2.434,2.234" HorizontalAlignment="Center" VerticalAlignment="Top"/>
@@ -39,19 +54,46 @@
         <Ellipse Fill="White" Height="12" Width="12" Canvas.Left="262" Canvas.Top="285" RenderTransformOrigin="2.434,2.234" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Ellipse Fill="White" Height="12" Width="12" Canvas.Left="253" Canvas.Top="268" RenderTransformOrigin="2.434,2.234" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Line X1="510" Y1="210" X2="548" Y2="296" Stroke="Beige" StrokeThickness="12" Canvas.Left="-7" Canvas.Top="-24"/>
-        <Rectangle Fill="DarkRed" RadiusX="5" RadiusY="10"  Height="40" Width="100" Canvas.Left="400" Canvas.Top="169" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Rectangle Fill="DarkRed" Height="14" Width="80" Canvas.Left="216" Canvas.Top="238" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Rectangle RadiusX="5" RadiusY="10"  Height="40" Width="100" Canvas.Left="400" Canvas.Top="169" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Rectangle.Fill>
+                <LinearGradientBrush>
+                    <GradientStop Color="DarkRed" Offset="0.6"/>
+                    <GradientStop Color="Red" Offset="1.0"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="14" Width="80" Canvas.Left="216" Canvas.Top="238" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Rectangle.RenderTransform>
                 <RotateTransform Angle="-40"/>
             </Rectangle.RenderTransform>
+            <Rectangle.Fill>
+                <LinearGradientBrush>
+                    <GradientStop Color="DarkRed" Offset="0.65"/>
+                    <GradientStop Color="Red" Offset="0.0"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
         </Rectangle>
         <Rectangle Fill="Red" RadiusX="5" RadiusY="10"  Height="20" Width="28" Canvas.Left="216" Canvas.Top="189" HorizontalAlignment="Left" VerticalAlignment="Center"/>
 
-        <Rectangle Fill="DarkRed" RadiusX="5" RadiusY="10"  Height="30" Width="29" Canvas.Left="230" Canvas.Top="179" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Rectangle RadiusX="5" RadiusY="10"  Height="30" Width="29" Canvas.Left="230" Canvas.Top="179" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Rectangle.Fill>
+                <LinearGradientBrush>
+                    <GradientStop Color="DarkRed" Offset="0.65"/>
+                    <GradientStop Color="Red" Offset="0.0"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
         <Line X1="300" Y1="220" X2="285" Y2="296" Stroke="Beige" StrokeThickness="12" Canvas.Top="-23"/>
-        <Rectangle Fill="Black" RadiusX="5" RadiusY="10" Height="35" Width="150" Canvas.Left="253" Canvas.Top="169" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Rectangle Fill="Black"  RadiusX="5" RadiusY="10" Height="35" Width="150" Canvas.Left="253" Canvas.Top="169" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
-        <Ellipse Fill="DarkRed" Height="58" Width="100" Canvas.Left="400" Canvas.Top="151" RenderTransformOrigin="1.122,1.115" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Ellipse Height="58" Width="100" Canvas.Left="400" Canvas.Top="151" RenderTransformOrigin="1.122,1.115" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Ellipse.Fill>
+                <LinearGradientBrush>
+                    <GradientStop Color="DarkRed" Offset="0.6"/>
+                    <GradientStop Color="Red" Offset="1.0"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
         <Ellipse Fill="Black" Height="30" Width="30" Canvas.Left="270" Canvas.Top="258" RenderTransformOrigin="1.122,1.115" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Ellipse Fill="Black" Height="30" Width="30" Canvas.Left="526" Canvas.Top="258" RenderTransformOrigin="1.122,1.115"/>
 
@@ -61,25 +103,50 @@
                 <RotateTransform Angle="-45"/>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Rectangle Fill="LightSlateGray" Height="10" Width="20" Canvas.Left="466" Canvas.Top="243" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Rectangle Height="10" Width="20" Canvas.Left="466" Canvas.Top="243" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Rectangle.RenderTransform>
                 <RotateTransform Angle="55"/>
             </Rectangle.RenderTransform>
+            <Rectangle.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1.1"/>
+                    <GradientStop Color="Gray" Offset="0.85"/>
+                </RadialGradientBrush>
+            </Rectangle.Fill>
         </Rectangle>
-        <Rectangle Fill="LightSlateGray" Height="10" Width="20" Canvas.Left="477" Canvas.Top="260" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Rectangle Height="10" Width="20" Canvas.Left="477" Canvas.Top="260" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Rectangle.RenderTransform>
                 <RotateTransform Angle="90"/>
             </Rectangle.RenderTransform>
+            <Rectangle.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1.1"/>
+                    <GradientStop Color="Gray" Offset="0.85"/>
+                </RadialGradientBrush>
+            </Rectangle.Fill>
         </Rectangle>
-        <Rectangle Fill="LightSlateGray" Height="14" Width="24" Canvas.Left="449" Canvas.Top="282" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Rectangle Height="14" Width="24" Canvas.Left="449" Canvas.Top="282" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Rectangle.RenderTransform>
                 <RotateTransform Angle="-35"/>
             </Rectangle.RenderTransform>
+            <Rectangle.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1.1"/>
+                    <GradientStop Color="Gray" Offset="0.85"/>
+                </RadialGradientBrush>
+            </Rectangle.Fill>
         </Rectangle>
-        <Rectangle Fill="LightSlateGray" Height="15" Width="260" Canvas.Left="198" Canvas.Top="258" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Rectangle Height="15" Width="260" Canvas.Left="198" Canvas.Top="258" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Rectangle.RenderTransform>
                 <RotateTransform Angle="5"/>
             </Rectangle.RenderTransform>
+            <Rectangle.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1.1"/>
+                    <GradientStop Color="Gray" Offset="0.85"/>
+                </RadialGradientBrush>
+            </Rectangle.Fill>
+
         </Rectangle>
         <Rectangle Fill="LightSlateGray" RadiusX="5" RadiusY="5"  Height="24" Width="50" Canvas.Left="379" Canvas.Top="250" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Rectangle.RenderTransform>
@@ -87,7 +154,14 @@
             </Rectangle.RenderTransform>
         </Rectangle>
         <Ellipse Fill="LightSlateGray" Height="30" Width="30" Canvas.Left="414" Canvas.Top="247" RenderTransformOrigin="1.122,1.115"/>
-        <Rectangle Fill="DarkRed" RadiusX="5" RadiusY="10"  Height="30" Width="60" Canvas.Left="325" Canvas.Top="204" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Rectangle RadiusX="5" RadiusY="10"  Height="30" Width="60" Canvas.Left="325" Canvas.Top="204" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <LinearGradientBrush>
+                    <GradientStop Color="DarkRed" Offset="0.4"/>
+                    <GradientStop Color="Red" Offset="1.0"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
         <Rectangle Fill="Black" Height="6" Width="30" Canvas.Left="331" Canvas.Top="225" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Rectangle Fill="Black" Height="6" Width="40" Canvas.Left="453" Canvas.Top="173" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Rectangle.RenderTransform>
